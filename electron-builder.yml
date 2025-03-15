@@ -1,8 +1,8 @@
-appId: 'mrslauncher'
-productName: 'MRS Launcher'
-artifactName: 'MRS-Launcher-setup-${version}.${ext}'
+appId: 'kakaminelauncher'
+productName: 'KAKAMine Launcher'
+artifactName: 'KAKAMine-Launcher-setup-${version}.${ext}'
 
-copyright: 'Copyright © 2018-2024 Daniel Scalzi, Copyright © 2024 peunsu'
+copyright: 'Copyright © 2025 kakamine_'
 
 asar: true
 compression: 'maximum'
@@ -12,6 +12,12 @@ files:
 
 extraResources:
   - 'libraries'
+
+publish:
+
+  provider: 'generic'
+
+  url: 'http://127.0.0.1:9090/'
 
 # Windows Configuration
 win: 
@@ -33,14 +39,14 @@ mac:
       arch:
         - 'x64'
         - 'arm64'
-  artifactName: 'MRS-Launcher-setup-${version}-${arch}.${ext}'
+  artifactName: 'KAKAMine-Launcher-setup-${version}-${arch}.${ext}'
   category: 'public.app-category.games'
 
 # Linux Configuration
 linux: 
   target: 'AppImage'
-  maintainer: 'Daniel Scalzi, peunsu'
-  vendor: 'Daniel Scalzi, peunsu'
+  maintainer: 'kakamine_'
+  vendor: 'kakamine_'
   synopsis: 'Modded Minecraft Launcher'
   description: 'Custom launcher which allows users to join modded servers. All mods, configurations, and updates are handled automatically.'
   category: 'Game'
